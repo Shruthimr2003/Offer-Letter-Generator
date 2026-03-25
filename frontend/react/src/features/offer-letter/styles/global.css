@@ -1,0 +1,233 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* Layout */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.full-container {
+  width: 100%;
+  height: 100vh;
+  padding: 24px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 16px;
+}
+
+/* Scroll */
+.scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 16px;
+  padding-right: 8px;
+}
+
+.scroll-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 10px;
+}
+
+/* Button */
+.button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background: #c7d2fe;
+}
+
+/* File input */
+.file-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px dashed #c7d2fe;
+  border-radius: 10px;
+}
+
+/* Status */
+.status {
+  text-align: center;
+}
+
+.status.error {
+  color: red;
+}
+
+.status.success {
+  color: green;
+}
+/* Header */
+.results-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Back Arrow */
+.back-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #eef2ff;
+  font-size: 18px;
+  cursor: pointer;
+  color: #4f46e5;
+  transition: all 0.25s ease;
+}
+
+.back-arrow:hover {
+  background: #4f46e5;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Wrapper Card (MAIN CARD) */
+.results-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+/* Card hover */
+.results-card:hover {
+  box-shadow: 0 15px 35px rgba(79, 70, 229, 0.15);
+}
+
+/* Results list */
+.results-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* Each row */
+.results-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #f9fafb;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect for row */
+.results-item:hover {
+  background: #eef2ff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.15);
+}
+
+/* Candidate name */
+.results-item span {
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Download button */
+.download-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #eef2ff;
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.25s ease;
+}
+
+.download-btn:hover {
+  background: #4f46e5;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Generate section */
+.generate-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Forward arrow */
+.forward-arrow {
+  font-size: 20px;
+  color: #4f46e5;
+  animation: slide 1s infinite alternate;
+}
+
+.text-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.text-input:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(6px);
+  }
+}
