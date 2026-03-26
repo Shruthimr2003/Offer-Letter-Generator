@@ -1,4 +1,3 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -40,15 +39,6 @@ body {
 /* =========================
    LAYOUT
 ========================= */
-.app-wrapper {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-
-}
-
 .home-wrapper{
   margin-top: 5%;
 }

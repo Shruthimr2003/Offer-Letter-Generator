@@ -52,7 +52,7 @@ const Home: React.FC = () => {
             type="text"
             value={docNo}
             onChange={(e) => setDocNo(e.target.value)}
-            placeholder="e.g. DOC010"
+            placeholder="e.g. 1232"
             className="text-input"
           />
         </div>
