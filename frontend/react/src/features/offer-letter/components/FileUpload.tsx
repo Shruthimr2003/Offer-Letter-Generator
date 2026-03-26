@@ -25,7 +25,6 @@ const FileUpload: React.FC<Props> = ({ label, onFileSelect, loading }) => {
 
   return (
     <div className="file-upload">
-      {/* ✅ Label added */}
       <label className="file-label">{label}</label>
 
       <input
