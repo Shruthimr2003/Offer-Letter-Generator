@@ -30,10 +30,10 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="container">
-      <h2 className="title">Offer Letter Generator</h2>
+    <div className="home-wrapper">
 
-      <div className="section">
+      <h2 className="file-label">Offer Letter Generator</h2>
+      <div className="container">
         <div className="section">
           <FileUpload
             label="Candidate Details"
@@ -41,33 +41,33 @@ const Home: React.FC = () => {
             loading={isLoading}
           />
         </div>
-      </div>
 
-      <div className="section">
-        <FileUpload label="Salary details" onFileSelect={setSalaryFile} loading={isLoading} />
-      </div>
+        <div className="section">
+          <FileUpload label="Salary Details" onFileSelect={setSalaryFile} loading={isLoading} />
+        </div>
 
-      <div className="section">
-        <h4>Document Number</h4>
-        <input
-          type="text"
-          value={docNo}
-          onChange={(e) => setDocNo(e.target.value)}
-          placeholder="e.g. DOC010"
-          className="text-input"
-        />
-      </div>
+        <div className="section">
+          <label className="file-label ">Document Number</label>
+          <input
+            type="text"
+            value={docNo}
+            onChange={(e) => setDocNo(e.target.value)}
+            placeholder="e.g. 1232"
+            className="text-input"
+          />
+        </div>
 
-      <div className="section">
-        <GenerateButton
-          onGenerate={handleGenerate}
-          loading={isLoading}
-          disabled={!file || !salaryFile || !docNo}
-        />
-      </div>
+        <div className="section">
+          <GenerateButton
+            onGenerate={handleGenerate}
+            loading={isLoading}
+            disabled={!file || !salaryFile || !docNo}
+          />
+        </div>
 
-      <div className="section">
-        <StatusMessage status={status} error={error} />
+        <div className="section">
+          <StatusMessage status={status} error={error} />
+        </div>
       </div>
     </div>
   );
