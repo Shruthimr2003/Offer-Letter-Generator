@@ -29,8 +29,8 @@ def replace_ctc_table(docx_path, df):
             return str(val).strip()
  
     ctc_keywords = [
-        "basic salary", "hra", "special allowance", "lta", "food allowance",
-        "mobile", "broadband", "gym", "technical books", "employee s provident fund",
+        "basic salary", "hra", "special allowance", "lta", 
+        "mobile", "broadband", "gym", "books allowance", "employee s provident fund",
         "annual gross salary"
     ]
  
