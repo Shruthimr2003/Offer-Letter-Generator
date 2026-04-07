@@ -14,7 +14,7 @@ FIELD_MAPPING = {
     "Variable_Pay": "variable pay",
     "Notice_Period_Buyout": "notice period buyout",
     "Relocation": "relocation",
-    "Relocatoin_From":"relocation from",
+    "Relocation_From":"relocation from",
     "Relocation_To":"relocation to",
 
     "Year": "year",
